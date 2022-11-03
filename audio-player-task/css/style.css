@@ -1,3 +1,41 @@
 body{
-   background-color: rgb(231, 216, 246);
+   background-image: linear-gradient(to left, #F4989C,#ACECF7);
+}
+#play-pause{
+   height: 50px;
+}
+#pause-play{
+   height: 50px;
+}
+#skip{
+   height: 50px;
+}
+h4{
+   font-family: monospace;
+   font-size: 30px;
+   font-weight: 10px;
+}
+
+#container{
+   width: 650px;
+   height: 650px;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   margin: auto;
+   padding: 10px;
+   justify-content: center; 
+   border-style: solid;
+   border-color: darkmagenta;
+   border-style: ridge;
+}
+#seek-bar{
+   width: 250px;
+   cursor: pointer; margin-left: 10px;
+   height: 25px;
+  
+}
+#current-time{
+   padding-left: 5px;
 }

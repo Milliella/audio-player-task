@@ -5,10 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>audio player kill me</title>
+    <!-- link to CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- link to JS -->
     <script src="javascript/audio-player.js" defer></script>
 </head>
 <body>
+    <!-- boz that the controls for the audio player are held in -->
+    <div id="container">
+        <!-- play/pause icons -->
+        <img id="play-pause" src="images/play.svg">
+        <img id="pause-play" src="images/pause.svg">
+        
+        <!-- button options + skip button-->
+        <h4 id="current-time">0:00</h4>
+        <h4 id="time-divider">/</h4>
+        <h4 id="total-time">0:00</h4>
+        <input id="seek-bar" type="range" min="0" value="0">
+        <img id="skip" src="images/skip.svg">
+    </div>
     
     
 </body>
