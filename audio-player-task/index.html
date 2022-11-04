@@ -12,10 +12,9 @@
 </head>
 <body>
     <!-- boz that the controls for the audio player are held in -->
-    <div id="container">
+    <div id="audio-player-container">
         <!-- play/pause icons -->
-        <img id="play-pause" src="images/play.svg">
-        <img id="pause-play" src="images/pause.svg">
+        <img id="play-pause" src="images/play.svg"src="images/pause.svg">
         
         <!-- button options + skip button-->
         <h4 id="current-time">0:00</h4>
@@ -23,8 +22,13 @@
         <h4 id="total-time">0:00</h4>
         <input id="seek-bar" type="range" min="0" value="0">
         <img id="skip" src="images/skip.svg">
+
+        <audio src="audio/Dantes-Seventh-Hell.webm" preload="metadata" loop></audio>
+        <audio src="audio/Slaughterhouse-Mistress.webm" preload="metadata" loop></audio>
+        <audio src="audio/Where-I-Find-Strength.webm" preload="metadata" loop></audio>
+
     </div>
-    
+
     
 </body>
 </html>

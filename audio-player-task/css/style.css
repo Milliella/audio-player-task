@@ -3,12 +3,16 @@ body{
 }
 #play-pause{
    height: 50px;
-}
-#pause-play{
    height: 50px;
+   cursor: pointer;
+   padding-left: 10px;
+   padding-right: 10px;
+
 }
+
 #skip{
    height: 50px;
+   cursor: pointer;
 }
 h4{
    font-family: monospace;
@@ -16,7 +20,7 @@ h4{
    font-weight: 10px;
 }
 
-#container{
+#audio-player-container{
    width: 650px;
    height: 650px;
    border-radius: 10px;
