@@ -3,7 +3,11 @@ const currentTime = document.getElementById("current-time");
 const seekBar = document.getElementById("seek-bar");
 const totalTime = document.getElementById("total-time");
 const skip = document.getElementById("skip");
-const playPause = document.getElementById("plauy-pause");
+const playPause = document.getElementById("play-pause");
+const obj = document.createElement("audio");
+console.log(obj.src="audio/Dantes-Seventh-Hell.webm"); 
+console.log(obj.src="audio/Slaughterhouse-Mistress.webm");
+console.log(obj.src="audio/Where-I-Find-Strength.webm");
 let isSeeking = false;
 
 playPause.onclick = function(){
