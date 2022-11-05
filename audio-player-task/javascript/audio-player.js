@@ -4,6 +4,10 @@ const totalTime = document.getElementById("total-time");
 const playPause = document.getElementById("play-pause");
 const seekBar = document.getElementById("seek-bar");
 const audio = new Audio("audio/Dantes-Seventh-Hell.webm");
+const volumeControl = document.getElementById("volume-conrol");
+const obj = document.createElement("audio");
+console.log(obj.volume); //1
+obj.value = 1;
 let isSeeking = false;
 
 playPause.onclick = function(){
@@ -48,6 +52,8 @@ seekBar.onchange = function(){
     audio.currentTime = seekBar.value;
     isSeeking = false;
 }
+
+
 function formatTime(secs) {
     let hours = Math.floor(secs / 3600);
     let minutes = Math.floor((secs - (hours * 3600)) / 60);
@@ -67,6 +73,7 @@ function formatTime(secs) {
         return minutes + ":" + seconds;
     }
 }
+
 
 
 
