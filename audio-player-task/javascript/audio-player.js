@@ -1,13 +1,9 @@
 console.log("hello world");
 const currentTime = document.getElementById("current-time");
-const seekBar = document.getElementById("seek-bar");
 const totalTime = document.getElementById("total-time");
-const skip = document.getElementById("skip");
 const playPause = document.getElementById("play-pause");
-const obj = document.createElement("audio");
-console.log(obj.src="audio/Dantes-Seventh-Hell.webm"); 
-console.log(obj.src="audio/Slaughterhouse-Mistress.webm");
-console.log(obj.src="audio/Where-I-Find-Strength.webm");
+const seekBar = document.getElementById("seek-bar");
+const audio = new Audio("audio/Dantes-Seventh-Hell.webm");
 let isSeeking = false;
 
 playPause.onclick = function(){
@@ -16,6 +12,7 @@ playPause.onclick = function(){
     }else{
         audio.pause();
     }
+
 }
 audio.oncanplaythrough = function(){
     seekBar.disabled = false;
@@ -26,7 +23,7 @@ audio.onplay = function(){
 audio.onpause = function(){
     playPause.src = "images/play.svg";
 }
-audio.onloadeddata = function(){
+audio.onloadedmetadata = function(){
     totalTime.innerHTML = formatTime(audio.duration);
     currentTime.innerHTML = formatTime(0);
     seekBar.max = Math.floor(audio.duration);
@@ -36,11 +33,16 @@ audio.ontimeupdate = function(){
     if(!isSeeking){
         seekBar.value = Math.floor(audio.currentTime);
     }
+
 }
-audio.opened = function(){
+audio.onended = function(){
     currentTime.innerHTML = formatTime(0);
     seekBar.value = 0;
     playPause.src = "images/play.svg";
+
+}
+seekBar.oninput = function(){
+    isSeeking = true;
 }
 seekBar.onchange = function(){
     audio.currentTime = seekBar.value;

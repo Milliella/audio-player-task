@@ -19,7 +19,18 @@ h4{
    font-size: 30px;
    font-weight: 10px;
 }
-
+p{
+   font-family: monospace;
+   font-size: 20px;
+   position: relative;
+   align-items: center;
+   justify-content: center;
+   display: block;
+   margin-left: 50px;
+   margin-top: 10px;
+   
+   
+}
 #audio-player-container{
    width: 650px;
    height: 650px;
@@ -43,3 +54,4 @@ h4{
 #current-time{
    padding-left: 5px;
 }
+
