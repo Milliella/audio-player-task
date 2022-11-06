@@ -3,10 +3,11 @@ const currentTime = document.getElementById("current-time");
 const totalTime = document.getElementById("total-time");
 const playPause = document.getElementById("play-pause");
 const seekBar = document.getElementById("seek-bar");
-const audio = new Audio("audio/Dantes-Seventh-Hell.webm");
+const audio = document.getElementById("audio");
 const volumeControl = document.getElementById("volume-conrol");
 const obj = document.createElement("audio");
-console.log(obj.volume); //1
+const button = document.getElementById("button");
+console.log(obj.volume);
 obj.value = 1;
 let isSeeking = false;
 
@@ -52,6 +53,33 @@ seekBar.onchange = function(){
     audio.currentTime = seekBar.value;
     isSeeking = false;
 }
+for (let i = 0; i < audio.audioTracks.length; i += 1){
+    audio.audioTracks[1].enabled = false;
+}
+// volumeControl.onchange = function(){
+//     audio.volume = volumeControl.value;
+//     isSeeking = false;
+// }
+
+// volumeControl.onchange = function(){
+//     audio.volume = volumeControl.value;
+//     isSeeking = true;
+    
+// }
+// HTMLMediaElement.volume = function(){
+//     volumeControl.value;
+//     isSeeking = true;
+// }
+
+// volumeControl.addEventListener()
+
+// button.forEach(button => {
+//     button
+// })
+//     button
+
+
+
 
 
 function formatTime(secs) {

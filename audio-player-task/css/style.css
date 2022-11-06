@@ -10,16 +10,16 @@ body{
 
 }
 
-#skip{
+/* #skip{
    height: 50px;
    cursor: pointer;
-}
+} */
 h4{
    font-family: monospace;
    font-size: 30px;
    font-weight: 10px;
 }
-p{
+button{
    font-family: monospace;
    font-size: 20px;
    position: relative;
@@ -27,12 +27,14 @@ p{
    margin-left: 50px;
    margin-top: 10px;
    margin-bottom: 30px;
-   
-   
+}
+button.hover{
+   background-color: darkcyan;
+   cursor: pointer;
 }
 #audio-player-container{
-   width: 650px;
-   height: 650px;
+   width: 800px;
+   height: 800px;
    border-radius: 10px;
    display: flex;
    flex-direction: row;
@@ -67,4 +69,5 @@ p{
    position:relative;
    background: transparent;
 }
+
 
