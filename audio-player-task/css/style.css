@@ -34,7 +34,7 @@ button.hover{
 }
 #audio-player-container{
    width: 800px;
-   height: 800px;
+   height: 400px;
    border-radius: 10px;
    display: flex;
    flex-direction: row;
@@ -57,7 +57,7 @@ button.hover{
 }
 .volume-slider{
    align-items: center;
-   border-radius: 50px;
+   border-radius: 100px;
 
 }
 .slider{
@@ -69,5 +69,15 @@ button.hover{
    position:relative;
    background: transparent;
 }
-
+/* datalist{
+   display: flex;
+   justify-content: space-between;
+   writing-mode: vertical-lr;
+   width: 10px;
+   padding: 50px;
+}
+input[type="range"]{
+   width: 10px;
+   margin: 0;
+} */
 

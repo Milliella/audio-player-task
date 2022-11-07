@@ -21,9 +21,18 @@
         <h4 id="time-divider">/</h4>
         <h4 id="total-time">0:00</h4>
         <input id="seek-bar" type="range" min="0" value="0">
+       
         <!-- <img id="skip" src="images/skip.svg"> -->
-        <input id="volume-control" type="range" min="0" max="1" value="1">
+        <input id="volume-control" type="range" name="volume"
+        min="0" max="10" value="100">
 
+        <!-- list to mark the mute and max options on the volume slider -->
+        <datalist id="volume-marks">
+            <option value="0" label="mute"></option>
+            <ption value="10" label="max"></otion>
+        </datalist>
+         
+        <!-- buttons to change the songs -->
         <div>
             <button> Dantes Seventh Hell</button>
             <button> Slaughterhouse Mistress</button>
@@ -37,7 +46,8 @@
             <audio id="audio" src="audio/Slaughterhouse-Mistress.webm" preload="metadata" loop></audio>
             <audio id="audio" src="audio/Where-I-Find-Strength.webm" preload="metadata" loop></audio>
             <audio>
-        </audio>
+            </audio>
+           
 
     
     </div>
