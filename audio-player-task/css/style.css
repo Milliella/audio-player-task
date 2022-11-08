@@ -1,5 +1,5 @@
 body{
-   background-image: linear-gradient(to left, #F4989C,#ACECF7);
+   background-image: linear-gradient(to left, #ffc1f1,#acecff);
 }
 #play-pause{
    height: 50px;
@@ -18,6 +18,15 @@ h4{
    font-family: monospace;
    font-size: 30px;
    font-weight: 10px;
+   color: rgb(37, 11, 49);
+}
+p{
+   font-family: monospace;
+   font-size: 20px;
+   margin-left: 15px;
+   color: rgb(37, 11, 49);
+   border-style: solid;
+   border-color: crimson;
 }
 button{
    font-family: monospace;
@@ -27,28 +36,35 @@ button{
    margin-left: 50px;
    margin-top: 10px;
    margin-bottom: 30px;
+   color: crimson;
+   background-color: maroon;
+   border-radius: 15px;
+   border-color: rgb(167, 0, 8);
+
 }
 button.hover{
-   background-color: darkcyan;
    cursor: pointer;
 }
 #audio-player-container{
    width: 800px;
-   height: 400px;
+   height:  800px;
    border-radius: 10px;
    display: flex;
    flex-direction: row;
    align-items: center;
    margin: auto;
+   margin-top: 150px;
    padding: 10px;
    justify-content: center; 
    border-style: solid;
    border-color: darkmagenta;
    border-style: ridge;
+   border-width: 25px;
 }
 #seek-bar{
    width: 250px;
-   cursor: pointer; margin-left: 10px;
+   cursor: pointer; 
+   margin-left: 10px;
    height: 25px;
   
 }

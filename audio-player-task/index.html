@@ -23,31 +23,28 @@
         <input id="seek-bar" type="range" min="0" value="0">
        
         <!-- <img id="skip" src="images/skip.svg"> -->
+        
+        <!-- volume control slider  -->
         <input id="volume-control" type="range" name="volume"
-        min="0" max="10" value="100">
+        min="0" max="100" value="100">
+        <p>volume</p>
 
         <!-- list to mark the mute and max options on the volume slider -->
         <datalist id="volume-marks">
             <option value="0" label="mute"></option>
-            <ption value="10" label="max"></otion>
+            <otion value="10" label="max"></otion>
         </datalist>
          
         <!-- buttons to change the songs -->
         <div>
-            <button> Dantes Seventh Hell</button>
-            <button> Slaughterhouse Mistress</button>
-            <button> Where I Find Strength</button>
+            <button id="track1"> Dantes Seventh Hell</button>
+            <button id="track2"> Slaughterhouse Mistress</button>
+            <button id="track3"> Where I Find Strength</button>
             
         </div>
 
         <!-- audios -->
-        <audio>
-            <audio id="audio" src="audio/Dantes-Seventh-Hell.webm" preload="metadata" loop></audio>
-            <audio id="audio" src="audio/Slaughterhouse-Mistress.webm" preload="metadata" loop></audio>
-            <audio id="audio" src="audio/Where-I-Find-Strength.webm" preload="metadata" loop></audio>
-            <audio>
-            </audio>
-           
+        
 
     
     </div>
