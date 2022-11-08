@@ -11,6 +11,8 @@ const button = document.getElementById("button");
 const track1button = document.getElementById("track1");
 const track2button = document.getElementById("track2");
 const track3button = document.getElementById("track3");
+const painting = document.getElementById("painting");
+console.log(painting)
 
 let isSeeking = false;
 
@@ -25,6 +27,7 @@ playPause.onclick = function(){
 }
 track1button.onclick = function(){
     audio.src = "audio/Dantes-Seventh-Hell.webm"
+    painting.src ="images/dan-peacock.jpg"
 }
 track2button.onclick = function(){
     audio.src = "audio/Slaughterhouse-Mistress.webm"

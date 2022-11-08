@@ -97,6 +97,10 @@ button.hover{
    position:relative;
    background: transparent;
 }
+#painting{
+   width: 200px;
+   height: auto;
+}
 /* datalist{
    display: flex;
    justify-content: space-between;
