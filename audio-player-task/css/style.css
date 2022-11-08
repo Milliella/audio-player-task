@@ -1,9 +1,9 @@
 body{
-   background-image: linear-gradient(to left, #ffc1f1,#acecff);
+   background-color: rgb(22, 22, 22) ;
 }
 #play-pause{
-   height: 50px;
-   height: 50px;
+   height: 60px;
+   height: 60px;
    cursor: pointer;
    padding-left: 10px;
    padding-right: 10px;
@@ -18,15 +18,22 @@ h4{
    font-family: monospace;
    font-size: 30px;
    font-weight: 10px;
-   color: rgb(37, 11, 49);
+   color: rgb(255, 255, 255);
+  
+}
+h2{
+   font-family: monospace;
+   font-size: 15px;
+   color: white;
+   margin-left: 85px;
+ 
 }
 p{
    font-family: monospace;
    font-size: 20px;
    margin-left: 15px;
-   color: rgb(37, 11, 49);
-   border-style: solid;
-   border-color: crimson;
+   color: rgb(255, 255, 255);
+  
 }
 button{
    font-family: monospace;
@@ -40,10 +47,12 @@ button{
    background-color: maroon;
    border-radius: 15px;
    border-color: rgb(167, 0, 8);
+   
 
 }
 button.hover{
    cursor: pointer;
+
 }
 #audio-player-container{
    width: 800px;
@@ -57,23 +66,26 @@ button.hover{
    padding: 10px;
    justify-content: center; 
    border-style: solid;
-   border-color: darkmagenta;
+   border-color: rgb(139, 0, 42);
    border-style: ridge;
    border-width: 25px;
+   background-image: linear-gradient(to right, #af1b1b,#070b27) ;
 }
 #seek-bar{
-   width: 250px;
+   width: 300px;
    cursor: pointer; 
    margin-left: 10px;
-   height: 25px;
+   height: 50px;
+   margin-top: 100px;
   
 }
 #current-time{
    padding-left: 5px;
 }
-.volume-slider{
-   align-items: center;
+.volume-control{
+   align-items: centre;
    border-radius: 100px;
+   width: 100px;
 
 }
 .slider{
