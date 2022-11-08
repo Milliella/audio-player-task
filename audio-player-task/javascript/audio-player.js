@@ -5,12 +5,15 @@ const currentTime = document.getElementById("current-time");
 const totalTime = document.getElementById("total-time");
 const playPause = document.getElementById("play-pause");
 const seekBar = document.getElementById("seek-bar");
-const audio = document.getElementById("audio");
-const volumeControl = document.getElementById("volume-conrol");
-const obj = document.createElement("audio");
+const audio = new Audio()
+const volumeControl = document.getElementById("volume-control");
 const button = document.getElementById("button");
-console.log(obj.volume);
-obj.value = 1;
+const track1button = document.getElementById("track1");
+const track2button = document.getElementById("track2");
+const track3button = document.getElementById("track3");
+const painting = document.getElementById("painting");
+console.log(painting)
+
 let isSeeking = false;
 
 // listens for when the play / pause button is clicked. if the pause symbol is showing, play the audio
@@ -20,8 +23,19 @@ playPause.onclick = function(){
     }else{
         audio.pause();
     }
-
+// listens for when each track button is clicked changes song and seek bar accordingly 
 }
+track1button.onclick = function(){
+    audio.src = "audio/Dantes-Seventh-Hell.webm"
+    painting.src ="images/dan-peacock.jpg"
+}
+track2button.onclick = function(){
+    audio.src = "audio/Slaughterhouse-Mistress.webm"
+}
+track3button.onclick = function(){
+    audio.src = "audio/Where-I-Find-Strength.webm"
+}
+
 // the audio duration that the seek bar displays, listens for when the selected audio is fully loaded 
 audio.oncanplaythrough = function(){
     seekBar.disabled = false;
@@ -66,8 +80,13 @@ seekBar.onchange = function(){
     audio.currentTime = seekBar.value;
     isSeeking = false;
 }
+volumeControl.onchange = function(){
+    audio.volume = volumeControl.value/100;
+    // console.log(volumeControl.value)
+}
 
 // VOLUME CONTROL ATTEMPTS
+
 
 // volumeControl.oninput = function(){
 //     isSeeking=true;
