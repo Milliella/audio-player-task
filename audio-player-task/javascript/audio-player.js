@@ -27,7 +27,7 @@ playPause.onclick = function(){
 }
 track1button.onclick = function(){
     audio.src = "audio/Dantes-Seventh-Hell.webm"
-    painting.src ="images/dan-peacock.jpg"
+    // painting.src ="images/dan-peacock.jpg"
 }
 track2button.onclick = function(){
     audio.src = "audio/Slaughterhouse-Mistress.webm"

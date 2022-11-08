@@ -3,10 +3,14 @@ body{
 }
 #play-pause{
    height: 60px;
-   height: 60px;
    cursor: pointer;
    padding-left: 10px;
    padding-right: 10px;
+
+}
+#volume-icon{
+   height: 40px;
+   margin-left: 10px;
 
 }
 
@@ -23,30 +27,27 @@ h4{
 }
 h2{
    font-family: monospace;
+   color: white;
+   margin-left: 710px;
+   font-size: 15px;
+}
+/* h2{
+   font-family: monospace;
    font-size: 15px;
    color: white;
-   margin-left: 85px;
+   margin-left: 100px;
  
-}
-p{
-   font-family: monospace;
-   font-size: 20px;
-   margin-left: 15px;
-   color: rgb(255, 255, 255);
-  
-}
+} */
 button{
    font-family: monospace;
-   font-size: 20px;
+   font-size: 30px;
    position: relative;
-   display: row;
-   margin-left: 50px;
-   margin-top: 10px;
-   margin-bottom: 30px;
+   margin-left: 570px;
    color: crimson;
    background-color: maroon;
    border-radius: 15px;
    border-color: rgb(167, 0, 8);
+  
    
 
 }
@@ -56,7 +57,7 @@ button.hover{
 }
 #audio-player-container{
    width: 800px;
-   height:  800px;
+   height:  300px;
    border-radius: 10px;
    display: flex;
    flex-direction: row;
@@ -69,15 +70,16 @@ button.hover{
    border-color: rgb(139, 0, 42);
    border-style: ridge;
    border-width: 25px;
-   background-image: linear-gradient(to right, #af1b1b,#070b27) ;
+   background-image: linear-gradient(to right, #d52626,#1e2452) ;
+   
 }
 #seek-bar{
    width: 300px;
    cursor: pointer; 
    margin-left: 10px;
    height: 50px;
-   margin-top: 100px;
-  
+   justify-content: center;
+   
 }
 #current-time{
    padding-left: 5px;
@@ -86,6 +88,7 @@ button.hover{
    align-items: centre;
    border-radius: 100px;
    width: 100px;
+   margin-left: 10px;
 
 }
 .slider{
@@ -101,6 +104,8 @@ button.hover{
    width: 200px;
    height: auto;
 }
+
+
 /* datalist{
    display: flex;
    justify-content: space-between;
@@ -112,4 +117,6 @@ input[type="range"]{
    width: 10px;
    margin: 0;
 } */
+
+
 
