@@ -27,7 +27,6 @@ playPause.onclick = function(){
 }
 track1button.onclick = function(){
     audio.src = "audio/Dantes-Seventh-Hell.webm"
-    // painting.src ="images/dan-peacock.jpg"
 }
 track2button.onclick = function(){
     audio.src = "audio/Slaughterhouse-Mistress.webm"
@@ -80,54 +79,10 @@ seekBar.onchange = function(){
     audio.currentTime = seekBar.value;
     isSeeking = false;
 }
+// listens for when the volume slider is interacted with, changes volume acordingly, event listener
 volumeControl.onchange = function(){
     audio.volume = volumeControl.value/100;
-    // console.log(volumeControl.value)
 }
-
-// VOLUME CONTROL ATTEMPTS
-
-
-// volumeControl.oninput = function(){
-//     isSeeking=true;
-// }
-// volumeControl.onchange = function(){
-//     audio.volume = volumeControl.value;
-//     isSeeking = false;
-// }
-// volumeControl.addEventListener ("mousemove", setvolme);
-// function setvolme(){
-//     audio.volume = volumeControl.value / 100;
-// }
-
-// for (let i = 0; i < audio.audioTracks.length; i += 1){
-//     audio.audioTracks[1].enabled = false;
-// }
-// volumeControl.onchange = function(){
-//     audio.volume = volumeControl.value;
-//     isSeeking = false;
-// }
-
-// volumeControl.onchange = function(){
-//     audio.volume = volumeControl.value;
-//     isSeeking = true;
-    
-// }
-// HTMLMediaElement.volume = function(){
-//     volumeControl.value;
-//     isSeeking = true;
-// }
-
-// volumeControl.addEventListener()
-
-// button.forEach(button => {
-//     button
-// })
-//     button
-
-
-
-
 // controls the current time that is displayed on the player 
 function formatTime(secs) {
     let hours = Math.floor(secs / 3600);

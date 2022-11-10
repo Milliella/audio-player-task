@@ -23,12 +23,6 @@ h4{
    color: rgb(255, 255, 255);
   
 }
-h2{
-   font-family: monospace;
-   color: white;
-   margin-left: 710px;
-   font-size: 15px;
-}
 /* song select heading styling */
 p{
    font-family: monospace;
@@ -91,9 +85,13 @@ p{
    margin-right: 10px;
    border-color: darkred;
    cursor: pointer;
+   transition: 0.2s;
 }
-.trackbutton.hover{
-   
+/* when you hover over the track buttons they change background and text colour, styles all three buttons */
+.trackbutton:hover{
+   cursor: pointer;
+   background-color: #840505;
+   color: rgb(255, 255, 255);
 }
 /* styling the current time seek bar  */
 #seek-bar{
