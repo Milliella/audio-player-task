@@ -10,21 +10,23 @@
     <!-- link to JS -->
     <script src="javascript/audio-player.js" defer></script>
 </head>
+
 <body>
+    <!-- box that holds the audio player cotrols and tracks -->
     <div id="audio-player-container">
-        <!-- box that the controls for the audio player are held in -->
+
+        <!-- box for audio player controls -->
         <div id="audio-player-controls">
+
             <!-- play/pause icons -->
             <img id="play-pause" src="images/play.svg"src="images/pause.svg">
             
-            
             <!-- button options + skip button-->
             <h4 id="current-time">0:00</h4>
-            <h4 id="time-divider">/</h4>
-            <h4 id="total-time">0:00</h4>
+            
+            <!-- <h4 id="time-divider">/</h4> -->
             <input id="seek-bar" type="range" min="0" value="0">
-        
-            <!-- <img id="skip" src="images/skip.svg"> -->
+            <h4 id="total-time">0:00</h4>
             
             <!-- volume control slider  -->
             <input id="volume-control" type="range" name="volume"
@@ -36,19 +38,21 @@
                 <option value="0" label="mute"></option>
                 <option value="10" label="max"></option>
             </datalist>
-            
-            <!-- buttons to change the songs -->
+    
+            </div>
+
+        <!-- heading indicating how to select the songs -->
+        <div id="song-select">
+        <p>Track Select :</p>
         </div>
+
+    <!-- buttons to change the songs -->
         <div id="tracklist">   
-            <button id="track1" class="trackbutton"> Dantes Seventh Hell
-                <img id="painting" src="images/dan-peacock.jpg">
-            </button>
+            <button id="track1" class="trackbutton"> Dantes Seventh Hell</button>
             <button id="track2" class="trackbutton"> Slaughterhouse Mistress</button>
             <button id="track3" class="trackbutton"> Where I Find Strength</button>
         </div>
     </div>
-    <!-- <div id="song-select">
-        <p>select song</p>
-    </div> -->
+    
 </body>
 </html>

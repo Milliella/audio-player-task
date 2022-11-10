@@ -1,6 +1,8 @@
+/* entire webpage settings */
 body{
    background-color: rgb(22, 22, 22) ;
 }
+/* play / pause audio symbol */
 #play-pause{
    height: 60px;
    cursor: pointer;
@@ -8,19 +10,15 @@ body{
    padding-right: 10px;
 
 }
+/* indicates the volume control slider */
 #volume-icon{
    height: 40px;
-   margin-left: 10px;
-
+   margin-left: 20px;
 }
-
-/* #skip{
-   height: 50px;
-   cursor: pointer;
-} */
+/* time signiture styling */
 h4{
    font-family: monospace;
-   font-size: 30px;
+   font-size: 25px;
    font-weight: 10px;
    color: rgb(255, 255, 255);
   
@@ -31,38 +29,17 @@ h2{
    margin-left: 710px;
    font-size: 15px;
 }
+/* song select heading styling */
 p{
    font-family: monospace;
    font-size: 20px;
    color: rgb(255, 255, 255);
    align-items:center;
 }
-/* h2{
-   font-family: monospace;
-   font-size: 15px;
-   color: white;
-   margin-left: 100px;
- 
-} */
-
-/* 
-button{
-   font-family: monospace;
-   font-size: 30px;
-   position: relative;
-   margin-left: 570px;
-   color: crimson;
-   background-color: maroon;
-   border-radius: 15px;
-   border-color: rgb(167, 0, 8);
-  
-   
-
-} */
-
+/* styling for the box that holds the audio player controls and song select buttons */
 #audio-player-container{
-   width: 800px;
-   height:  800px;
+   width: 850px;
+   height:  900px;
    border-radius: 10px;
    display: flex;
    flex-direction: column;
@@ -74,42 +51,51 @@ button{
    border-style: solid;
    border-color: rgb(139, 0, 42);
    border-style: ridge;
-   border-width: 25px;
-   background-image: linear-gradient(to right, #d52626,#1e2452) ;
+   border-width: 30px;
+   background-image: linear-gradient(to right, #be0707,#3944a5) ;
    
 }
+/* box that holds the play/pause symbol, current time, seek bar, volume control bar, and volume control symbol */
 #audio-player-controls{
    display: flex;
    flex-direction: row;
    align-items: center;
-   
+   margin-bottom: 100px;
+   border-color: rgb(139, 0, 42) ;
+   border-style: solid;
+   height: 300px;
+   width: 800px;
+   background-image: transparent;
+   border-radius: 10px;
+   border-width: 5px;
+   border-style:groove;
+ 
 }
-
-
+/* id for the three different songs buttons  */
 #tracklist{
    display: flex;
    flex-direction: row;
 
 }
-
+/* class styling for the three different song buttons- changing the apperence and placement */
 .trackbutton{
    flex-grow: 2;
-   color: #0a0808;
-   background-color: crimson;
+   color: #4b0000;
+   background-color: rgb(223, 26, 66);
    font-family: monospace;
-   font-size: 20px;
+   font-size: 25px;
    border-radius: 15px;
    height: 100px;
-   margin-top: 100px;
+   margin-top: 70px;
    margin-left: 20px;
    margin-right: 10px;
+   border-color: darkred;
+   cursor: pointer;
 }
 .trackbutton.hover{
-   cursor: pointer;
-
-
+   
 }
-
+/* styling the current time seek bar  */
 #seek-bar{
    width: 300px;
    cursor: pointer; 
@@ -118,47 +104,18 @@ button{
    justify-content: center;
    
 }
+/* changing the apperence of the current time  */
 #current-time{
    padding-left: 5px;
 }
-.volume-control{
-   align-items: centre;
-   border-radius: 100px;
-   width: 100px;
-   margin-left: 10px;
-
-}
-.slider{
-   padding-left: 25px;
-   align-items: center;
-   margin-top: 20px;
-}
-.slider input[type="range"]{
-   position:relative;
-   background: transparent;
-}
-#painting{
+/* styling and changing the placement of the volume control bar slider  */
+#volume-control{
+   margin-left: 20px;
    width: 200px;
-   height: auto;
-}
-/* #song-select{
-   align-items: center;
-   margin-left: 1150px;
-  
-} */
 
 
-/* datalist{
-   display: flex;
-   justify-content: space-between;
-   writing-mode: vertical-lr;
-   width: 10px;
-   padding: 50px;
 }
-input[type="range"]{
-   width: 10px;
-   margin: 0;
-} */
+
 
 
 

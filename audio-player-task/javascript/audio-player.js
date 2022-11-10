@@ -23,7 +23,7 @@ playPause.onclick = function(){
     }else{
         audio.pause();
     }
-// listens for when each track button is clicked changes song and seek bar accordingly 
+// listens for when each track button is clicked, updates song and seek bar value accordingly 
 }
 track1button.onclick = function(){
     audio.src = "audio/Dantes-Seventh-Hell.webm"
